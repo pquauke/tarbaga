@@ -1,0 +1,173 @@
+/* _________________________STYLE_________________________ */
+
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 165%;
+    text-decoration: none;
+}
+
+h1,h2,a {
+    font-weight: 900;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+h2,.quote {
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+/* colors */
+
+:root {
+    --gray: #F7F7F7;
+}
+
+a {
+    color: black;
+}
+
+.hero {
+    color: white;
+}
+
+.button.white {
+    color: black;
+    background-color: white;
+}
+
+.button.black {
+    color: white;
+    background-color: black;
+}
+
+/* custom list icons */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-image: url('./images/expand_circle_right.svg');
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    padding-left: 34px;
+    display: flex;
+    align-items: center;
+}
+
+/* _________________________LAYOUT_________________________ */
+
+* {
+    /* outline: 2px solid red; */
+    box-sizing: border-box;
+}
+
+h1,h2,p {
+    /* remove default margins and add custom ones */
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+img {
+    object-position: center center;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* remove default margins */
+    margin: 0;
+}
+
+.max-width {
+    max-width: 940px;
+    margin: 0 auto; /* center */
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 3px;
+    align-self: self-start;
+}
+
+.hero {
+    /* background */
+    background-image: url('./images/hero.webp');
+    background-position: center center;
+    background-size: cover;
+    height: 900px;
+    /* layout*/
+    display: flex;
+    align-items: end;
+    padding: 20px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.quote {
+    /* background */
+    background-color: var(--gray);
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px;
+    min-height: 300px;
+}
+
+.h2-img-text {
+    padding: 50px 0px;
+}
+
+.img-text {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px 20px;
+}
+
+.header {
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-pages,.footer-pages {
+    display: flex;
+    gap: 20px;
+}
+
+.footer {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #F7F7F7;
+}
+
+.footer p {
+    font-size: 80%;
+}
